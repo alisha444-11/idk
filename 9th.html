@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please complete all required fields.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <br><br>
+
+                <label for="jobemail">Email Address:</label>
+                <input type="email" id="jobemail" name="email" required>
+                <br><br>
+
+                <label for="jobphone">Phone Number:</label>
+                <input
+                    type="tel"
+                    id="jobphone"
+                    name="phone"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+                <br><br>
+
+                <label for="city">Current City:</label>
+                <input type="text" id="city" name="city" required>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Job Details</legend>
+
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="">-- Select Position --</option>
+                    <option value="web-developer">Web Developer</option>
+                    <option value="python-developer">Python Developer</option>
+                    <option value="software-engineer">Software Engineer</option>
+                    <option value="data-analyst">Data Analyst</option>
+                </select>
+
+                <br><br>
+
+                <label for="experience">Work Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">-- Select Experience --</option>
+                    <option value="fresher">Fresher</option>
+                    <option value="1-2">1–2 Years</option>
+                    <option value="3-5">3–5 Years</option>
+                    <option value="5+">More than 5 Years</option>
+                </select>
+
+                <br><br>
+
+                <label for="employment">Employment Type:</label>
+                <select id="employment" name="employment" required>
+                    <option value="">-- Select Type --</option>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="internship">Internship</option>
+                    <option value="remote">Remote</option>
+                </select>
+
+                <br><br>
+
+                <label for="salary">Expected Annual Salary (INR):</label>
+                <input
+                    type="number"
+                    id="salary"
+                    name="salary"
+                    min="0"
+                    step="1000"
+                >
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Education and Skills</legend>
+
+                <label for="education">Highest Qualification:</label>
+                <select id="education" name="education" required>
+                    <option value="">-- Select Qualification --</option>
+                    <option value="high-school">High School</option>
+                    <option value="bachelors">Bachelor's Degree</option>
+                    <option value="masters">Master's Degree</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="skills">Technical Skills:</label>
+                <textarea
+                    id="skills"
+                    name="skills"
+                    rows="4"
+                    cols="40"
+                    placeholder="Example: Python, Java, SQL"
+                    required
+                ></textarea>
+
+                <br><br>
+
+                <label for="resume">Upload Resume:</label>
+                <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                >
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="coverletter">Cover Letter:</label>
+                <textarea
+                    id="coverletter"
+                    name="coverletter"
+                    rows="6"
+                    cols="40"
+                    placeholder="Tell us why you are suitable for this position."
+                ></textarea>
+
+                <br><br>
+
+                <input
+                    type="checkbox"
+                    id="declaration"
+                    name="declaration"
+                    required
+                >
+                <label for="declaration">
+                    I confirm that the information provided is accurate.
+                </label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Thank you for your interest in joining our team.</p>
+    </footer>
+
+</body>
+</html>
